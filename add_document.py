@@ -45,6 +45,6 @@ if __name__ == "__main__":
     docs = text_splitter.split_documents(raw_docs)
     logger.info("Split %d documents", len(docs))
 
-    vectorstore = initialize_vectorestore()
+    vectorstore = initialize_vectorstore()
 
     vectorstore.add_documents(docs)
